@@ -1,0 +1,174 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  padding-top: 50px;
+}
+#root
+{
+    height:100%;
+}
+
+
+.navcontainer
+{
+    
+    padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.navcontainer div
+{
+    
+    display: flex;
+    align-items:center;
+}
+.navcontainer p
+{
+    color:rgb(2, 143, 244);
+}
+.navcontainer img
+{ margin-right: 5px;
+    height: 50px;
+}
+.middle
+{
+    display: flex;
+    flex-direction: column;
+}
+.inputs
+{
+    margin-left:auto;
+    margin-right: auto;
+    text-indent: 5px;
+   
+ 
+}
+.inputs :nth-child(1)
+{
+    margin: 10px;
+
+}
+.inputs input
+{
+    padding: 4px;
+  border:2px solid blueviolet;
+
+}
+.selectcolor
+{
+   flex-shrink:1;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    display: inline;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right,rgb(0, 247, 255),pink);
+}
+.selectcolor select
+{
+    color: blueviolet;
+    border-radius: 5px;
+    border-color: aquamarine;
+}
+#select:hover
+{
+    color: blueviolet;
+    border-radius: 5px;
+    border-color: aquamarine;
+}
+button
+{
+   width: 90%;
+   margin:0 auto;
+    color:rgb(66, 166, 237);
+background-color:rgb(115, 250, 201);
+display: flex;
+align-items: center;
+font-weight: 700;
+justify-content: center;
+padding: 5px;
+border:none;
+box-shadow: 5px 5px 5px rgb(222, 245, 237);
+border-radius: 8px;
+}
+button:hover
+{
+   color:rgb(104, 188, 249);
+}
+button:active
+{
+    background-color: rgb(66, 166, 237);
+    color:white;
+    box-shadow: 5px 5px 5px white;
+}
+
+
+.btnimage
+{
+    margin-left: 5px;
+    height: 20px;
+}
+.container
+{
+    width: 60%;
+height:fit-content;
+  margin: auto;
+
+
+border:1px solid rgb(2, 143, 244);
+}
+@media screen and (max-width:800px) {
+    
+.container
+{
+   
+    width:100%;
+}
+
+}
+.memeImage
+{
+max-height: 400px;
+max-width: 500px;
+margin:  auto;
+margin-top: 25px;
+margin-bottom: 25px;
+text-align: center;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.memeImage img
+{
+    height: 400px; 
+    max-width: 500px;
+    
+
+}
+.topText
+{
+    position:absolute;
+    top:25px;
+ 
+    align-items: center;
+}
+.bottomText
+{
+    position: absolute;
+    bottom:25px;
+
+}
